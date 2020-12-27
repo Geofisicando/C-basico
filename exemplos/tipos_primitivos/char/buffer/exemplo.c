@@ -8,5 +8,5 @@ int main(void){
 	printf("Introduza outro caractere: "); scanf(" %c",&c2);
 
 	printf("O primeiro caractere introduzido foi %c e o segundo foi %c \n",
-		c1, c2);
+	c1, c2);
 }
