@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
-	float salario; imposto = 0.0;
+	float salario, imposto = 0.0;
 	char sexo;
 
 	printf("Introduza o salário: ");
 	scanf("%f",&salario);
-	printf("Qual o sexo: ");
-	sexo = getchar();
+	printf("Qual o sexo: ");	
+	scanf(" %c",&sexo);
 
 	switch(sexo){
 		case 'f':
@@ -16,6 +17,7 @@ int main(void){
 		case 'm':
 		case 'M': imposto = 0.15;
 			  break;
+		default: printf("Sexo inválido!\n"); exit(1);
 	}
 
 	printf("Imposto devido %.2f\n",salario*imposto);

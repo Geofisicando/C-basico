@@ -15,7 +15,7 @@ int main(void){
 		case 'D': printf("Divorciado\n"); break;
 		case 'v':
 		case 'V': printf("Viúvo\n"); break;
-		default: printf("Estado civil inválido!"\n);
+		default: printf("Estado civil inválido!\n");
 	}
 }
 		
